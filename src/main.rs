@@ -5,12 +5,14 @@ use std::cmp::Ordering;
 use rand::Rng;
 
 fn main() {
+    println!("---------------");
     println!("Coin Toss Game!");
-    let number = rand::thread_rng().gen_range(0,2);
 
     loop {
         println!("Heads or tails?");
         println!("Please input your choice (0 or 1):");
+
+        let number = rand::thread_rng().gen_range(0,2);
 
         let mut guess = String::new();
 
