@@ -7,7 +7,6 @@ use rand::Rng;
 fn main() {
     println!("Coin Toss Game!");
     let number = rand::thread_rng().gen_range(0,2);
-    println!("The coin toss result is: {}", number);
 
     loop {
         println!("Heads or tails?");
